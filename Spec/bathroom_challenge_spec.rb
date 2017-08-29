@@ -27,8 +27,10 @@ describe "#right" do
 end
 
 describe "#unlock" do
-  it "given an array of arrays, returns the correct code" do
+  it "given an array of arrays, returns the correct bathroom code" do
     expect(unlock([["U", "L", "L"], ["R", "R", "D", "D", "D"], ["L", "U", "R", "D", "L"], ["U", "U", "U", "U", "D"]])).to eq(1985)
+    expect(unlock([["L", "L", "R", "D"], ["U", "L", "R", "D", "D"], ["R", "R", "L"], ["D", "U", "U", "D"]])).to eq(8885)
+
   end
 end
 
